@@ -1,0 +1,40 @@
+.h {
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+
+}
+
+body {
+    background-image: url(h_images/horror\ bg1.jpg);
+
+    background-size: 100vw 100vh;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    padding: 12px;
+    margin: 45px;
+    background-color: bisque;
+}
+
+.para {
+    color: white;
+    font-size: 20px;
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+}

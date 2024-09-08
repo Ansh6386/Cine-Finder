@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Welcome to GeeksforGeeks</h2>
+    <p>This is the example of <i>location.href</i> way. </p>
+
+    <!-- <button onclick="myFunc(7)">Click me</button> -->
+
+    <form name="form1" action="#">
+        <ul>
+            <li><input type='text' name='text1' /></li>
+            <li>&nbsp;</li>
+            <li class="submit"><input type="submit" name="submit" value="Submit"
+                    onclick="myFunc(document.form1.text1)" /></li>
+            <li>&nbsp;</li>
+        </ul>
+    </form>
+
+    <!--script to redirect to another webpage-->
+    <script>
+        function myFunc(inputText) {
+
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (inputText.value.match(mailformat)) {
+                window.location.href = "http://127.0.0.1:5500/index1.html";
+            }
+            else {
+                alert("ko");
+            }
+        } 
+    </script>
+</body>
+
+</html>

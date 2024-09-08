@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="in1.css" rel="stylesheet">
+    <link href="images/company logo.png" rel="icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="bg" src="images/landing bg.jpg">
+        <img class="logo" src="images/Final logo.png">
+        <!-- <a id="btn" href="signup.html">Sign Up</a> -->
+        <a href="signup33.html"><button id="btn">Sign Up</button></a>
+
+        <select id="language">
+            <option>English</option>
+            <option>हिंदी</option>
+        </select>
+        <p id="para">Discover Your Cinematic Journey</p>
+        <p id="para1">Here you can get movie suggestions on your preffered gener for
+            FREE...</p>
+
+        <form id="emailForm" onsubmit="validateEmail(event)">
+            <input type="email" id="input" name="email" placeholder="Enter Your Email" required>
+            <p id="para2">Click Submit to Continue &#128073; &nbsp;
+                <button id="btn2" type="submit">Submit</button>
+            </p>
+        </form>
+
+    </div>
+
+    <script>
+        function validateEmail(event) {
+            event.preventDefault();
+
+            // Get the input value
+            var emailInput = document.getElementById('input').value;
+
+            // Regular expression for basic email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Check if the email is valid
+            if (emailRegex.test(emailInput)) {
+                // If valid, open the next page (you can replace the URL with the desired next page)
+                window.location.href = 'http://127.0.0.1:5500/index2.html';
+            } else {
+                // If not valid, display an error message (you can customize the error handling)
+                alert('Invalid email. Please enter a valid email address.');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
